@@ -7,17 +7,15 @@
 
  * VERSION = us, eu, jp, sh
  * TARGET_BITS = 32, 64
- * BETTERCAMERA = 0, 1 If 1, build with analog camera support (uses Puppycam).
- * Optional OpenGL1.3-based renderer for older machines, as well as the original GL2.1, D3D11 and D3D12 renderers from Emill's [n64-fast3d-engine](https://github.com/Emill/n64-fast3d-engine/).
+ * BETTERCAMERA = 0, 1
+ * WINDOWS_CONSOLE = 0, 1
  * Option to disable drawing distances.
  * Optional model and texture fixes (e.g. the smoke texture).
  * Skip introductory Peach & Lakitu cutscenes with the `--skip-intro` CLI option
- * Cheats menu in Options (activate with `--cheats` or by pressing L thrice in the pause menu).
- * Support for both little-endian and big-endian save files (meaning you can use save files from both sm64-port and most emulators), as well as an optional text-based save format.
-
-Recent changes in Nightly have moved the save and configuration file path to `%HOMEPATH%\AppData\Roaming\sm64ex` on Windows and `$HOME/.local/share/sm64ex` on Linux. This behaviour can be changed with the `--savepath` CLI option.
-For example `--savepath .` will read saves from the current directory (which not always matches the exe directory, but most of the time it does);
-   `--savepath '!'` will read saves from the executable directory.
-
+ 
+ ## More Options
+ 
+ * `--cheats` will enable cheats menu.
+ * `--savepath '!'` will read saves from the executable directory.
 
 ```
