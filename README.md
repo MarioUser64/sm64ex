@@ -9,13 +9,11 @@
  * TARGET_BITS = 32, 64
  * BETTERCAMERA = 0, 1
  * WINDOWS_CONSOLE = 0, 1
- * Option to disable drawing distances.
- * Optional model and texture fixes (e.g. the smoke texture).
- * Skip introductory Peach & Lakitu cutscenes with the `--skip-intro` CLI option
  
  ## More Options
  
  * `--cheats` will enable cheats menu.
  * `--savepath '!'` will read saves from the executable directory.
+ * `--skip-intro` skip introductory Peach & Lakitu cutscenes.
 
 ```
