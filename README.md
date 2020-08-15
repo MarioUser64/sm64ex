@@ -3,11 +3,11 @@
 ![alt text](https://images8.alphacoders.com/821/821497.png)
 ```markdown
 
-## New features
+## Build option
 
- * Options menu with various settings, including button remapping.
- * Optional external data loading (so far only textures and assembled soundbanks), providing support for custom texture packs.
- * Optional analog camera and mouse look (using [Puppycam](https://github.com/FazanaJ/puppycam)).
+ * VERSION = us, eu, jp, sh
+ * TARGET_BITS = 32, 64
+ * BETTERCAMERA = 0, 1 If 1, build with analog camera support (uses Puppycam).
  * Optional OpenGL1.3-based renderer for older machines, as well as the original GL2.1, D3D11 and D3D12 renderers from Emill's [n64-fast3d-engine](https://github.com/Emill/n64-fast3d-engine/).
  * Option to disable drawing distances.
  * Optional model and texture fixes (e.g. the smoke texture).
