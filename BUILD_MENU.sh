@@ -13,19 +13,22 @@ select opt in "${options[@]}" "Quit"; do
     case "$REPLY" in
 
     1 ) echo "Building $opt version"
-	    make -j$(nproc) VERSION=$opt DEBUG=1 NODRAWINGDISTANCE=1 TEXTURE_FIX=1 EXTERNAL_DATA=1 EXT_OPTIONS_MENU=1 WINDOWS_CONSOLE=1
+	    make -j$(nproc) VERSION=$opt NODRAWINGDISTANCE=1 TEXTURE_FIX=1 EXTERNAL_DATA=1 EXT_OPTIONS_MENU=1 RENDER_API=D3D11
+		./doxygen/shortcut.exe $opt
 		echo "Finish"
 		read -n 1 -s -r -p "Press any key to continue"
 		clear
 	;;
     2 ) echo "Building $opt version"
-	    make -j$(nproc) VERSION=$opt DEBUG=1 NODRAWINGDISTANCE=1 TEXTURE_FIX=1 EXTERNAL_DATA=1 EXT_OPTIONS_MENU=1 WINDOWS_CONSOLE=1
+	    make -j$(nproc) VERSION=$opt NODRAWINGDISTANCE=1 TEXTURE_FIX=1 EXTERNAL_DATA=1 EXT_OPTIONS_MENU=1
+		./doxygen/shortcut.exe $opt
 		echo "Finish"
 		read -n 1 -s -r -p "Press any key to continue"
 		clear
 	;;
     3 ) echo "Building $opt version"
-	    make -j$(nproc) VERSION=$opt DEBUG=1 NODRAWINGDISTANCE=1 TEXTURE_FIX=1 EXTERNAL_DATA=1 EXT_OPTIONS_MENU=1 WINDOWS_CONSOLE=1
+	    make -j$(nproc) VERSION=$opt NODRAWINGDISTANCE=1 TEXTURE_FIX=1 EXTERNAL_DATA=1 EXT_OPTIONS_MENU=1
+		./doxygen/shortcut.exe $opt
 		echo "Finish"
 		read -n 1 -s -r -p "Press any key to continue"
 		clear
